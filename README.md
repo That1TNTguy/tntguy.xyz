@@ -1,2 +1,0 @@
-# tntguy.xyz
-hello
