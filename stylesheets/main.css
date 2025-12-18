@@ -1,22 +1,117 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Exported from Figma">
-  <title>Exported Figma Design</title>
-  
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<div class="desktop-1-1">
-<img src="images/rectangle-2-2.png" class="rectangle-2-2" alt="rectangle-2" />
-<div class="rectangle-1-3"></div>
-<p class="text-4"><span class="text-white">[tnt]</span></p>
-<p class="text-5"><span class="text-white">Coming [soon]</span></p>
-<p class="text-6"><span class="text-white">(I suck at design so give me a bit, ok?)</span></p>
-</div>
+/* Add font files for Helvetica Neue */
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('fonts/helvetica-neue.woff2') format('woff2'),
+       url('fonts/helvetica-neue.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --font-family-helvetica-neue: 'Helvetica Neue', sans-serif;
+  --text-white: rgba(255, 255, 255, 1);
+}
 
-</body>
-</html>
+.text-white {
+  color: var(--text-white);
+}
+
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prototype Links (v5.6.0) */
+a.prototype-link {
+  text-decoration: none;
+  color: inherit;
+  display: contents;
+}
+
+.rectangle-2-2 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  height: auto;
+}
+
+.rectangle-1-3 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(255, 12, 12, 1);
+}
+
+.text-4 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-helvetica-neue);
+  font-weight: 700;
+  font-size: 61px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-white);
+}
+
+.text-5 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-helvetica-neue);
+  font-weight: 700;
+  font-size: 107px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-white);
+}
+
+.text-6 {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  text-align: left;
+  font-family: var(--font-family-helvetica-neue);
+  font-weight: 700;
+  font-size: 40px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-white);
+}
+
+.desktop-1-1 {
+@media (max-width: 1440px) {
+  .desktop-1-1 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop-1-1 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(255, 255, 255, 1);
+}
