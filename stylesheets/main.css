@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('fonts/helvetica-neue.woff2') format('woff2'),
+       url('fonts/helvetica-neue.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --font-family-helvetica-neue: 'Helvetica Neue', sans-serif;
+  --text-white: rgba(255, 255, 255, 1);
+}
+
 .desktop {
   background-color: #ffffff;
   min-height: 1080px;
