@@ -1,5 +1,5 @@
 import React from "react";
-import rectangle2 from "images/rectangle-2.png";
+import rectangle2 from "images/rectangle-2-2.png";
 import "stylesheets/main.css";
 
 export const Desktop = () => {
